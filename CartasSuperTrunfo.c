@@ -28,7 +28,7 @@ int main() {
 
     printf("INSIRA NOME DA CIDADE 1:\n");
     scanf("%49s", Cidade1);
-    printf("INSIRA CÓDIGO DA CIDADE 2:\n");
+    printf("INSIRA NOME DA CIDADE 2:\n");
     scanf("%49s", Cidade2);
 
     printf("INSIRA POPULAÇÃO 1:\n");
@@ -61,6 +61,8 @@ int main() {
     printf("CIDADE: %s\n", Cidade1);
     printf("ÁREA: %f\n", Area1);
     printf("POPULAÇÃO: %d\n", Populacao1);
+    printf("PIB: %f\n", PIB1);
+    printf("PONTOS TURÍSTICOS: %d\n", Turismo1);
 
 
     printf("--- CARTA DE ESTADO 2---\n");
@@ -69,6 +71,8 @@ int main() {
     printf("CIDADE: %s\n", Cidade2);
     printf("ÁREA: %f\n", Area2);
     printf("POPULAÇÃO: %d\n", Populacao2);
+    printf("PIB %f\n", PIB2);
+    printf("PONTOS TURÍSTICOS: %d\n", Turismo2);
 
     //FINALIZAÇÃO E ESPAÇO PARA CRÉDITOS
 
