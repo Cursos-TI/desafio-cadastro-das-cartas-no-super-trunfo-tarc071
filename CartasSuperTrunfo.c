@@ -1,15 +1,20 @@
-#include <stdio.h>
+#include <stdio.h> //INCLUSÃO DE BIBLIOTECA
 
-
+//INICIO DO CÓGIGO //CADASTRO DE VARIAVEIS DAS CARTAS
 int main() {
    
     char Estado1[50], Estado2[50];
     char Codigo1[50], Codigo2[50];
     char Cidade1[50], Cidade2[50];
-    int Populacao1, Populacao2;
-    float Area1, Area2;
-          
-    printf("BEM-VINDo AO SUPER TRUNFO ESTADOS\n");
+    int Populacao1, Populacao2,Turismo1, Turismo2;
+    float Area1, Area2, PIB1, PIB2;
+    
+    // ABERTURA DO JOGO E INSTRUÇÕES AO JOGADOR
+
+    printf("BEM-VINDE AO SUPER TRUNFO ESTADOS\n");
+    printf("A SEGUIR INFORME OS DADOS DAS CARTAS DO SUPER TRUNFO\n");
+
+    //ENTRADA DE DADOS DAS CARTAS PELO JOGADOR
 
     printf("INSIRA NOME DO ESTADO 1:\n");
     scanf("%49s", Estado1);
@@ -36,20 +41,42 @@ int main() {
     printf("INSIRA ÁREA ESTADO 2:\n");
     scanf("%f", &Area2);
 
-    printf("ESTADO 1\n");
-    printf("%s\n", Estado1);
-    printf("%s\n", Codigo1);
-    printf("%s\n", Cidade1);
-    printf("%f\n", Area1);
+    printf("INSIRA PIB ESTADO 1:\n");
+    scanf("%f", &PIB1);
+    printf("INSIRA PIB ESTADO 2:\n");
+    scanf("%f", &PIB2);
+
+    printf("INSIRA QUANTIDADE DE PONTOS TURISTICOS DO ESTADO 1:");
+    scanf("%d", &Turismo1);
+     printf("INSIRA QUANTIDADE DE PONTOS TURISTICOS DO ESTADO 2:");
+    scanf("%d", &Turismo2);
+
+    //SAÍDA DE DADOS DAS CARTAS DO SUPER TRUNFO C
+
+    printf("VEJA AGORA O RESULTADO DA RODADA:\n");
+
+    printf("--- CARTA DE ESTADO 1---\n");
+    printf("NOME: %s\n", Estado1);
+    printf("CÓDIGO: %s\n", Codigo1);
+    printf("CIDADE: %s\n", Cidade1);
+    printf("ÁREA: %f\n", Area1);
+    printf("POPULAÇÃO: %d\n", Populacao1);
 
 
-    printf("ESTADO 2\n");
-    printf("%s\n", Estado2);
-    printf("%s\n", Codigo2);
-    printf("%s\n", Cidade2);
-    printf("%f\n", Area2);
+    printf("--- CARTA DE ESTADO 2---\n");
+    printf("NOME: %s\n", Estado2);
+    printf("CÓDIGO: %s\n", Codigo2);
+    printf("CIDADE: %s\n", Cidade2);
+    printf("ÁREA: %f\n", Area2);
+    printf("POPULAÇÃO: %d\n", Populacao2);
 
-    printf("OBRIGADO POR JOGAR!");
+    //FINALIZAÇÃO E ESPAÇO PARA CRÉDITOS
+
+    printf("_________________\n");
+
+    printf("OBRIGADO POR JOGAR!\n");
+
+    printf("DEVELOPED BY: CISINHO\n");
 
     return 0;
 }
