@@ -8,6 +8,7 @@ int main() {
     char Cidade1[50], Cidade2[50];
     int Populacao1, Populacao2,Turismo1, Turismo2;
     float Area1, Area2, PIB1, PIB2;
+    float densidade, ppc;
     
     // ABERTURA DO JOGO E INSTRUÇÕES AO JOGADOR
 
@@ -63,7 +64,9 @@ int main() {
     printf("POPULAÇÃO: %d\n", Populacao1);
     printf("PIB: %f\n", PIB1);
     printf("PONTOS TURÍSTICOS: %d\n", Turismo1);
-
+    printf("Densidade Populacional 1:  %f\n", (float) Area1 / Populacao1);
+    printf("PIB PER CAPITA 1: %f\n", (float) PIB1 / Populacao1); 
+    
 
     printf("--- CARTA DE ESTADO 2---\n");
     printf("NOME: %s\n", Estado2);
@@ -73,6 +76,8 @@ int main() {
     printf("POPULAÇÃO: %d\n", Populacao2);
     printf("PIB %f\n", PIB2);
     printf("PONTOS TURÍSTICOS: %d\n", Turismo2);
+    printf("Densidade Populacional 2:  %f\n", (float) Area2 / Populacao2);
+    printf("PIB PER CAPITA 2: %f\n", (float) PIB2 / Populacao2); 
 
     //FINALIZAÇÃO E ESPAÇO PARA CRÉDITOS
 
